@@ -194,25 +194,82 @@ nav {
     text-decoration: none; }
 
 /*-----------------------------------*/
-/*---------CARRUSEL---------*/
+/*---------CARRUSEL EMPRESAS---------*/
 /*-----------------------------------*/
-#carrusel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  height: 20vh;
-  margin: 50px 0px; }
-  #carrusel img {
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+#carrusel-empresas .slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 150px;
+  margin: 2% 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  #carrusel-empresas .slider::before, #carrusel-empresas .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2; }
+  #carrusel-empresas .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  #carrusel-empresas .slider::before {
+    left: 0;
+    top: 0; }
+  #carrusel-empresas .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  #carrusel-empresas .slider .slide {
     height: 100%;
-    width: auto;
-    background-size: cover;
-    background-position: center; }
-  #carrusel h2 {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
-    color: black; }
+    width: 100%; }
+
+/*-----------------------------------*/
+/*---------CARRUSEL CERTIFICACIONES ---------*/
+/*-----------------------------------*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+#carrusel-certificaciones .slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 150px;
+  margin: 2% 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  #carrusel-certificaciones .slider::before, #carrusel-certificaciones .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2; }
+  #carrusel-certificaciones .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  #carrusel-certificaciones .slider::before {
+    left: 0;
+    top: 0; }
+  #carrusel-certificaciones .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  #carrusel-certificaciones .slider .slide {
+    height: 100%;
+    width: 100%; }
 
 /*-----------------------------------*/
 /*---------SERVICIOS----------*/

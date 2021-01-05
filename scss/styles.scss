@@ -247,31 +247,132 @@ nav {
 }
 
  /*-----------------------------------*/
-/*---------CARRUSEL---------*/
+/*---------CARRUSEL EMPRESAS---------*/
 /*-----------------------------------*/
 
-#carrusel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    height: 20vh;
-    margin: 50px 0px;
-
-    img {
-        height: 100%;
-        width: auto;
-        background-size: cover;
-        background-position: center;
+#carrusel-empresas {
+    @mixin white-gradient {
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     }
-// checkear titulo de carrusel
-    h2 { 
-        display: block;
-        margin-top: 40px;
-        text-align: center;
-        color: black;
+    
+     $animationSpeed: 40s;
+    
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
     }
+    
+    
+    
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 150px;
+        margin: 2% 0;
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 150px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        
+        .slide {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
 }
+
+
+ /*-----------------------------------*/
+/*---------CARRUSEL CERTIFICACIONES ---------*/
+/*-----------------------------------*/
+#carrusel-certificaciones {
+    @mixin white-gradient {
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+    
+     $animationSpeed: 40s;
+    
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
+    }
+    
+    
+    
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 150px;
+        margin: 2% 0;
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 150px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        
+        .slide {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+}
+
+
 
 
 
