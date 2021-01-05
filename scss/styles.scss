@@ -381,7 +381,7 @@ nav {
 /*-----------------------------------*/
 
 #servicios {
-    margin-top: 60px;
+    margin-top: 75px;
     height: 70vh;
     display: grid;
     grid-template-columns: 33%  33%  33% ;
@@ -389,6 +389,7 @@ nav {
 }
 
 .tit-servicio {
+    margin-top: 100px;
     text-align: center;
     font-size: 4rem;
     font-weight: 300;
@@ -442,14 +443,7 @@ nav {
     
 }
 
-.card-titulo {
-    z-index: 4;
-    filter: blur(0px);
 
-    &::before {
-        filter: blur(0px);
-    }
-}
 
 /*-----------------------------------*/
 /*---------FOOTER----------*/

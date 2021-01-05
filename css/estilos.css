@@ -275,13 +275,14 @@ nav {
 /*---------SERVICIOS----------*/
 /*-----------------------------------*/
 #servicios {
-  margin-top: 60px;
+  margin-top: 75px;
   height: 70vh;
   display: grid;
   grid-template-columns: 33%  33%  33%;
   grid-template-rows: 15% auto 15%; }
 
 .tit-servicio {
+  margin-top: 100px;
   text-align: center;
   font-size: 4rem;
   font-weight: 300; }
@@ -318,12 +319,6 @@ nav {
     z-index: 3; }
   .cards-servicio:hover::after {
     opacity: 1; }
-
-.card-titulo {
-  z-index: 4;
-  filter: blur(0px); }
-  .card-titulo::before {
-    filter: blur(0px); }
 
 /*-----------------------------------*/
 /*---------FOOTER----------*/
