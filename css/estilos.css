@@ -374,19 +374,18 @@ nav {
 /*---------FOOTER----------*/
 /*-----------------------------------*/
 footer {
-  display: flex;
-  background-color: #efefef;
-  padding: 50px;
-  font-size: 1rem;
-  justify-content: center; }
-  footer li {
-    list-style: none;
-    display: inline-block;
-    margin: 0  20px; }
-    footer li a {
-      text-decoration: none;
-      color: #828282; }
-  footer p {
-    color: whitesmoke;
-    justify-content: center;
-    align-items: center; }
+  background-color: #efefef; }
+  footer .contenedor {
+    padding: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    footer .contenedor .columna1 {
+      display: flex;
+      width: 25%; }
+    footer .contenedor .columna2 {
+      display: flex;
+      flex-direction: column; }
+    footer .contenedor .columna3 {
+      display: flex;
+      flex-direction: column; }
