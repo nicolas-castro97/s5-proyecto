@@ -376,16 +376,37 @@ nav {
 footer {
   background-color: #efefef; }
   footer .contenedor {
-    padding: 10% 0;
+    padding-top: 10%;
+    padding-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    color: #828282; }
+    footer .contenedor h4 {
+      padding-bottom: 5%;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: #1b1b1b; }
+    footer .contenedor li {
+      list-style: none;
+      line-height: 1.8rem; }
+      footer .contenedor li a {
+        text-decoration: transparent; }
+        footer .contenedor li a:hover {
+          border-bottom: 1px solid #828282; }
     footer .contenedor .columna1 {
       display: flex;
-      width: 25%; }
+      flex-direction: column;
+      width: 15%;
+      align-content: flex-start; }
+      footer .contenedor .columna1 p {
+        align-self: flex-start; }
     footer .contenedor .columna2 {
       display: flex;
       flex-direction: column; }
     footer .contenedor .columna3 {
       display: flex;
       flex-direction: column; }
+  footer .copyright {
+    text-align: center;
+    padding-bottom: 7%; }

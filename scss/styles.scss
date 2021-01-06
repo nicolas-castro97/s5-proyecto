@@ -565,14 +565,46 @@ footer {
     background-color: #efefef;
     
     .contenedor {
-        padding: 10% 0 ;
+        padding-top: 10% ;
+        padding-bottom: 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        color: #828282;
+        
+        h4 {
+            padding-bottom: 5%;
+            font-weight: 300;
+            font-size: 1.5rem;
+            color: rgb(27, 27, 27);
+           }
+        
+        li {
+            list-style: none;
+            line-height: 1.8rem;
+            
+           a {
+               text-decoration: transparent;
+            
+            &:hover {
+                
+                border-bottom: 1px solid #828282;
+            }   
+           } 
+        }   
+
+
 
        .columna1 {
            display: flex;
-           width: 25%;
+           flex-direction: column;
+           width: 15%;
+           align-content: flex-start;
+
+           
+            p {
+                align-self: flex-start;
+            }
         
        } 
        .columna2 {
@@ -586,6 +618,12 @@ footer {
         flex-direction: column;
        }
     }
+
+    .copyright {
+        text-align: center;
+        padding-bottom: 7%;
+    }
+
 }
 
 
