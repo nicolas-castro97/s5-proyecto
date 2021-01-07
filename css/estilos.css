@@ -215,7 +215,18 @@
       width: calc(250px * 14); }
     #carrusel-certificaciones .slider .slide {
       height: 100%;
-      width: 100%; } }
+      width: 100%; }
+  /*-----------------------------------*
+/*---------SERVICIOS   ---------*/
+  /*-----------------------------------*/
+  #servicios {
+    margin-top: 75px;
+    height: 70vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33%  33%  33%;
+    grid-template-rows: 15% auto 15%;
+    justify-items: center; } }
 
 @media (min-width: 1200px) {
   * {
