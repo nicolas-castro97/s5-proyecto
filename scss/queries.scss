@@ -630,21 +630,170 @@
          }
 
         }
-
     }
 
+
+
+
+
 /*-----------------------------------*
-/*---------SERVICIOS   ---------*/
+/*---------BANNER-BOT---------*/
 /*-----------------------------------*/
 
 
+    #banner-bot {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/header.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 525px;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: auto  50%  auto ;
+        grid-template-rows: 20% auto auto;
+
+        .banner {
+            text-align: center;
+            align-items: center;
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+
+        h4 {
+            margin-top: 3%;
+            color: whitesmoke;
+            font-size: 3.5rem;
+            font-weight: 200;
+        }
+
+            .boton-hero-banner {
+                color: whitesmoke;
+                background-color:#2d417e;
+                border: 1px solid #2d417e;
+                width: 225px;
+                height: 20%;
+                font-size: 1.3rem;
+                font-weight: 200;
+                text-decoration: none; 
+                margin-top: 5%;
+                transition: background-color 0.3s, border 0.3s;
+                cursor: pointer;
+            
+            
+                &:hover {
+                
+                    background-color: transparent;
+                    border: 1px solid #ead2a1 ;
+                    width: 225px;
+                    height: 20%;
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    text-decoration: none; 
+                    margin-top: 5%;
+                    transition: background-color 0.5s, border 0.5s;
+                    cursor: pointer;
+                }
+            
+                a  {
+                    text-decoration: none;
+                    font-weight: 200;
+                }
+            
+            }
+
+
+        
+    }
 
 
 
+/*-----------------------------------*/
+/*---------FOOTER----------*/
+/*-----------------------------------*/
+    
+
+    footer {
+        background-color: #efefef;
+        
+        .contenedor {
+            padding-top: 10% ;
+            padding-bottom: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: column;
+            color: #828282;
+            
+            h4 {
+                padding-bottom: 2%;
+                font-weight: 300;
+                font-size: 1.5rem;
+                color: rgb(27, 27, 27);
+            }
+            
+            li {
+                list-style: none;
+                line-height: 1.8rem;
+                
+            a {
+                text-decoration: transparent;
+                
+                &:hover {
+                    
+                    border-bottom: 1px solid #828282;
+                }   
+            } 
+            }   
 
 
 
+        .columna1 {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                align-content: flex-start;
+                padding-bottom: 7%;
+                padding-left: 3%;
+            
+                p {
+                    align-self: flex-start;
+                }
+            
+            } 
 
+        .columna2 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 7%;
+            padding-left: 3%;
+        }
+
+        .columna3 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 7%;
+            padding-left: 3%;
+        }
+
+        .columna4 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 7%;
+            padding-left: 3%;
+        }
+        }
+
+        .copyright {
+            text-align: center;
+            padding-bottom: 7%;
+            
+        }
+
+    }
 
 
 } 
+
+
+
+
