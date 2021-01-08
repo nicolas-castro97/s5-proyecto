@@ -339,4 +339,315 @@
     }
 
 
+
+/*-----------------------------------*
+/*---------SERVICIOS   ---------*/
+/*-----------------------------------*/
+
+    .tit-servicio {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+   
+
+
+    #servicios {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+        
+
+        .cards-servicio1 {
+            display: flex;
+            flex-direction: column;
+            padding: 7% 5%;
+            margin: 20px 20px;
+            font-size: 2rem;
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 90%;
+            color: blue;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1);
+            
+         // border: 1px solid #222222;
+       
+    
+         h3 {
+            color: black;
+            padding-bottom: 5%;
+         }
+    
+         &::after {
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            // -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            // transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+         }
+     
+         &:hover {
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid transparent;
+            z-index: 3;
+         }
+    
+         &:hover::after {
+            opacity: 1;
+         }
+
+         p {
+            font-weight: 300;
+            color: whitesmoke;
+            background-color: rgba(19, 19, 19, 0.5);
+            font-size: 1.3rem;
+         }
+
+
+         .boton-servicios {
+            justify-self: end;
+            align-self: center;
+            width: 35%;
+            background-color: #2d417e;
+            
+            border: none;
+            height: 25%;
+            font-size: 1.1rem;
+            font-weight: 200;
+            text-decoration: none; 
+            transition: background-color 0.3s;
+            padding: 2%;
+            margin-top: 7%;
+        
+        
+            &:hover {
+                background-color:#27386b;
+                border: none;
+                width: 35%;
+                height: 25%;
+                font-size: 1.1rem;
+                font-weight: 200;
+                text-decoration: none; 
+                grid-row-start: 2;
+                margin-top: 10%;
+            }
+        
+            a  {
+                text-decoration: none;
+                color: whitesmoke;
+            }  
+         }
+
+        }
+
+        .cards-servicio2 {
+            display: flex;
+            flex-direction: column;
+            padding: 7% 5%;
+            margin: 20px 20px;
+            font-size: 2rem;
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 90%;
+            color: blue;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1);
+            
+         // border: 1px solid #222222;
+       
+    
+         h3 {
+            color: black;
+            padding-bottom: 5%;
+         }
+    
+         &::after {
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            // -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            // transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+         }
+     
+         &:hover {
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid transparent;
+            z-index: 3;
+         }
+    
+         &:hover::after {
+            opacity: 1;
+         }
+
+         p {
+            font-weight: 300;
+            color: whitesmoke;
+            background-color: rgba(19, 19, 19, 0.5);
+            font-size: 1.3rem;
+         }
+
+
+         .boton-servicios {
+            justify-self: end;
+            align-self: center;
+            width: 35%;
+            background-color: #2d417e;
+            
+            border: none;
+            height: 25%;
+            font-size: 1.1rem;
+            font-weight: 200;
+            text-decoration: none; 
+            transition: background-color 0.3s;
+            padding: 2%;
+            margin-top: 7%;
+        
+        
+            &:hover {
+                background-color:#27386b;
+                border: none;
+                width: 35%;
+                height: 25%;
+                font-size: 1.1rem;
+                font-weight: 200;
+                text-decoration: none; 
+                grid-row-start: 2;
+                margin-top: 10%;
+            }
+        
+            a  {
+                text-decoration: none;
+                color: whitesmoke;
+            }  
+         }
+
+        }
+
+        .cards-servicio3 {
+            display: flex;
+            flex-direction: column;
+            padding: 7% 5%;
+            margin: 20px 20px;
+            font-size: 2rem;
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 90%;
+            color: blue;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1);
+            
+         // border: 1px solid #222222;
+       
+    
+         h3 {
+            color: black;
+            padding-bottom: 5%;
+         }
+    
+         &::after {
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            // -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            // transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+         }
+     
+         &:hover {
+            background-image: url("imagenes/s5-nosotros.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid transparent;
+            z-index: 3;
+         }
+    
+         &:hover::after {
+            opacity: 1;
+         }
+
+         p {
+            font-weight: 300;
+            color: whitesmoke;
+            background-color: rgba(19, 19, 19, 0.5);
+            font-size: 1.3rem;
+         }
+
+
+         .boton-servicios {
+            justify-self: end;
+            align-self: center;
+            width: 35%;
+            background-color: #2d417e;
+            
+            border: none;
+            height: 25%;
+            font-size: 1.1rem;
+            font-weight: 200;
+            text-decoration: none; 
+            transition: background-color 0.3s;
+            padding: 2%;
+            margin-top: 7%;
+        
+        
+            &:hover {
+                background-color:#27386b;
+                border: none;
+                width: 35%;
+                height: 25%;
+                font-size: 1.1rem;
+                font-weight: 200;
+                text-decoration: none; 
+                grid-row-start: 2;
+                margin-top: 10%;
+            }
+        
+            a  {
+                text-decoration: none;
+                color: whitesmoke;
+            }  
+         }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 } 
