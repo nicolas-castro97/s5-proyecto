@@ -219,14 +219,209 @@
   /*-----------------------------------*
 /*---------SERVICIOS   ---------*/
   /*-----------------------------------*/
+  .tit-servicio {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300; }
   #servicios {
-    margin-top: 75px;
-    height: 70vh;
-    display: grid;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    grid-template-columns: 33%  33%  33%;
-    grid-template-rows: 15% auto 15%;
-    justify-items: center; } }
+    justify-content: center; }
+    #servicios .cards-servicio1 {
+      display: flex;
+      flex-direction: column;
+      padding: 7% 5%;
+      margin: 20px 20px;
+      font-size: 2rem;
+      background-image: url("imagenes/s5-nosotros.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 90%;
+      color: blue;
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1); }
+      #servicios .cards-servicio1 h3 {
+        color: black;
+        padding-bottom: 5%; }
+      #servicios .cards-servicio1::after {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0; }
+      #servicios .cards-servicio1:hover {
+        background-image: url("imagenes/s5-nosotros.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid transparent;
+        z-index: 3; }
+      #servicios .cards-servicio1:hover::after {
+        opacity: 1; }
+      #servicios .cards-servicio1 p {
+        font-weight: 300;
+        color: whitesmoke;
+        background-color: rgba(19, 19, 19, 0.5);
+        font-size: 1.3rem; }
+      #servicios .cards-servicio1 .boton-servicios {
+        justify-self: end;
+        align-self: center;
+        width: 35%;
+        background-color: #2d417e;
+        border: none;
+        height: 25%;
+        font-size: 1.1rem;
+        font-weight: 200;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        padding: 2%;
+        margin-top: 7%; }
+        #servicios .cards-servicio1 .boton-servicios:hover {
+          background-color: #27386b;
+          border: none;
+          width: 35%;
+          height: 25%;
+          font-size: 1.1rem;
+          font-weight: 200;
+          text-decoration: none;
+          grid-row-start: 2;
+          margin-top: 10%; }
+        #servicios .cards-servicio1 .boton-servicios a {
+          text-decoration: none;
+          color: whitesmoke; }
+    #servicios .cards-servicio2 {
+      display: flex;
+      flex-direction: column;
+      padding: 7% 5%;
+      margin: 20px 20px;
+      font-size: 2rem;
+      background-image: url("imagenes/s5-nosotros.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 90%;
+      color: blue;
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1); }
+      #servicios .cards-servicio2 h3 {
+        color: black;
+        padding-bottom: 5%; }
+      #servicios .cards-servicio2::after {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0; }
+      #servicios .cards-servicio2:hover {
+        background-image: url("imagenes/s5-nosotros.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid transparent;
+        z-index: 3; }
+      #servicios .cards-servicio2:hover::after {
+        opacity: 1; }
+      #servicios .cards-servicio2 p {
+        font-weight: 300;
+        color: whitesmoke;
+        background-color: rgba(19, 19, 19, 0.5);
+        font-size: 1.3rem; }
+      #servicios .cards-servicio2 .boton-servicios {
+        justify-self: end;
+        align-self: center;
+        width: 35%;
+        background-color: #2d417e;
+        border: none;
+        height: 25%;
+        font-size: 1.1rem;
+        font-weight: 200;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        padding: 2%;
+        margin-top: 7%; }
+        #servicios .cards-servicio2 .boton-servicios:hover {
+          background-color: #27386b;
+          border: none;
+          width: 35%;
+          height: 25%;
+          font-size: 1.1rem;
+          font-weight: 200;
+          text-decoration: none;
+          grid-row-start: 2;
+          margin-top: 10%; }
+        #servicios .cards-servicio2 .boton-servicios a {
+          text-decoration: none;
+          color: whitesmoke; }
+    #servicios .cards-servicio3 {
+      display: flex;
+      flex-direction: column;
+      padding: 7% 5%;
+      margin: 20px 20px;
+      font-size: 2rem;
+      background-image: url("imagenes/s5-nosotros.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 90%;
+      color: blue;
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s cubic-bezier(0.1, 0.14, 0.1, 1); }
+      #servicios .cards-servicio3 h3 {
+        color: black;
+        padding-bottom: 5%; }
+      #servicios .cards-servicio3::after {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0; }
+      #servicios .cards-servicio3:hover {
+        background-image: url("imagenes/s5-nosotros.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid transparent;
+        z-index: 3; }
+      #servicios .cards-servicio3:hover::after {
+        opacity: 1; }
+      #servicios .cards-servicio3 p {
+        font-weight: 300;
+        color: whitesmoke;
+        background-color: rgba(19, 19, 19, 0.5);
+        font-size: 1.3rem; }
+      #servicios .cards-servicio3 .boton-servicios {
+        justify-self: end;
+        align-self: center;
+        width: 35%;
+        background-color: #2d417e;
+        border: none;
+        height: 25%;
+        font-size: 1.1rem;
+        font-weight: 200;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        padding: 2%;
+        margin-top: 7%; }
+        #servicios .cards-servicio3 .boton-servicios:hover {
+          background-color: #27386b;
+          border: none;
+          width: 35%;
+          height: 25%;
+          font-size: 1.1rem;
+          font-weight: 200;
+          text-decoration: none;
+          grid-row-start: 2;
+          margin-top: 10%; }
+        #servicios .cards-servicio3 .boton-servicios a {
+          text-decoration: none;
+          color: whitesmoke; } }
 
 @media (min-width: 1200px) {
   * {
