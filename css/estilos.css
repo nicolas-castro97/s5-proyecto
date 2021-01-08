@@ -421,7 +421,10 @@
           margin-top: 10%; }
         #servicios .cards-servicio3 .boton-servicios a {
           text-decoration: none;
-          color: whitesmoke; } }
+          color: whitesmoke; }
+  /*-----------------------------------*
+/*---------SERVICIOS   ---------*/
+  /*-----------------------------------*/ }
 
 @media (min-width: 1200px) {
   * {
