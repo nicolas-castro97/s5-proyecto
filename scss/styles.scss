@@ -36,11 +36,13 @@
     }
     
     
-    .container {
+    .container1 {
         display: grid;
         width: 100%;
         grid-template-columns: 25% auto 25%;
         grid-template-rows: 10% auto 30%;
+
+
     }
     
     .texto__header {

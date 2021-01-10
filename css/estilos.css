@@ -1255,7 +1255,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-  .container {
+  .container1 {
     display: grid;
     width: 100%;
     grid-template-columns: 25% auto 25%;
