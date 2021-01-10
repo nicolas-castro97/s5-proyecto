@@ -1232,6 +1232,142 @@
       text-align: center;
       padding-bottom: 7%; } }
 
+@media (min-width: 1000px) {
+  /*-----------------------------------*/
+  /*---------CARRUSEL EMPRESAS ----------*/
+  /*-----------------------------------*/
+  .titulo-empresas-certificaciones {
+    font-size: 2.1rem; }
+  /*-----------------------------------*/
+  /*---------NOSOTROS ----------*/
+  /*-----------------------------------*/
+  #nosotros {
+    display: grid;
+    grid-template-columns: 2.5% auto 2.5%;
+    grid-template-rows: 15% auto 15%;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    padding: 10% 0 15% 0; }
+    #nosotros h4 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: #222222;
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    #nosotros .linea {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      margin-bottom: 2%;
+      border-bottom: 2px solid black;
+      width: 12%; }
+    #nosotros img {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 100%; }
+    #nosotros .parrafo__nosotros {
+      display: none;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: #27386b;
+      color: whitesmoke;
+      padding: 15% 10%;
+      line-height: 1.5;
+      font-size: 1.2rem;
+      font-weight: 300; }
+    #nosotros .boton-servicios {
+      align-self: center;
+      justify-self: center;
+      background-color: #2d417e;
+      border: none;
+      width: 220px;
+      height: 60px;
+      font-size: 1.3rem;
+      font-weight: 200;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      grid-row-start: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-end: 3;
+      margin-top: 5%; }
+      #nosotros .boton-servicios:hover {
+        background-color: #27386b;
+        border: none;
+        width: 200px;
+        height: 50px;
+        font-size: 1.3rem;
+        font-weight: 200;
+        text-decoration: none;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-end: 3;
+        margin-top: 5%; }
+      #nosotros .boton-servicios a {
+        text-decoration: none; }
+  /*-----------------------------------*/
+  /*---------FOOTER ----------*/
+  /*-----------------------------------*/
+  footer {
+    background-color: #efefef; }
+    footer .contenedor {
+      font-size: 1.2rem;
+      padding-top: 10%;
+      width: 100%;
+      padding-bottom: 5%;
+      display: flex;
+      flex-direction: row;
+      color: #828282; }
+      footer .contenedor h4 {
+        padding-bottom: 2%;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: #1b1b1b; }
+      footer .contenedor li {
+        list-style: none;
+        line-height: 1.8rem; }
+        footer .contenedor li a {
+          text-decoration: transparent; }
+          footer .contenedor li a:hover {
+            border-bottom: 1px solid #828282; }
+      footer .contenedor .columna1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-content: flex-start;
+        padding-bottom: 7%;
+        padding-left: 3%; }
+        footer .contenedor .columna1 p {
+          align-self: flex-start; }
+      footer .contenedor .columna2 {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding-bottom: 7%;
+        padding-left: 3%; }
+      footer .contenedor .columna3 {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding-bottom: 7%;
+        padding-left: 3%; }
+      footer .contenedor .columna4 {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding-bottom: 7%;
+        padding-left: 3%; }
+    footer .copyright {
+      text-align: center;
+      padding-bottom: 7%;
+      font-size: 1.1rem; } }
+
 @media (min-width: 1200px) {
   * {
     padding: 0;
@@ -1259,7 +1395,59 @@
     display: grid;
     width: 100%;
     grid-template-columns: 25% auto 25%;
-    grid-template-rows: 10% auto 30%; }
+    grid-template-rows: 10% auto 30%;
+    /*---------HAMBURGUER-NAV----------*/
+    /* change ham image to close */
+    /*---------HAMBURGUER-NAV----------*/ }
+    .container1 .ham {
+      display: none;
+      position: absolute;
+      /* always keep ham on top of everything */
+      z-index: 1000;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      background-image: url("/css/imagenes/Hamburger_icon_white.svg");
+      background-size: 100%;
+      color: white; }
+    .container1 .showClose {
+      background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg"); }
+    .container1 .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #1f1f1f;
+      width: 100vw;
+      height: 75vh;
+      overflow: hidden;
+      color: white;
+      /* hide the menu above the screen by default */
+      transform: translateY(-100%);
+      /* transition adds a little animation when sliding in and out the menu */
+      transition: transform 0.2s ease; }
+      .container1 .navbar ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center; }
+        .container1 .navbar ul li a {
+          color: white;
+          padding-bottom: 10px;
+          border-bottom: 2px solid white;
+          text-decoration: none;
+          font-size: 1.2rem; }
+          .container1 .navbar ul li a:hover, .container1 .navbar ul li a:focus {
+            border-bottom: 2px solid white; }
+    .container1 .showNav {
+      /* show the menu */
+      transform: translateY(0); }
   .texto__header {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -1375,12 +1563,14 @@
       grid-column-end: 2;
       grid-row-end: 3; }
     #nosotros img {
+      display: none;
       grid-column-start: 3;
       grid-column-end: 5;
       grid-row-start: 1;
       grid-row-end: 4;
       width: 100%; }
   .parrafo__nosotros {
+    display: none;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
