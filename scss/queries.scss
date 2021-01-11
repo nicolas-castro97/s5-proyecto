@@ -435,9 +435,9 @@
              grid-column-end: 4;
              grid-row-start: 1;
              grid-row-end: 2;
-             background-image: url("imagenes/s5-nosotros.jpg");
+             background-image: url("imagenes/servicio-tecnico.jpg");
              background-size: cover;
-             background-position: center;
+             background-position: top;
          }
     
          h3 {
@@ -680,7 +680,7 @@
 
 
     #banner-bot {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/header.jpeg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/banner.jpg);
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
